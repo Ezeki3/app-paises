@@ -1,0 +1,13 @@
+<h2>Busquedas</h2>
+<hr>
+<ul class="list-group">
+  <!-- con routerLink se manda a llamar cada componente segun su ruta -->
+  <!-- con routerLinkActive se pinta de un color cuando se selecciona, segun la clase de bootstrap que se elija -->
+  <!--[routerLinkActiveOptions]="{exact:true}"para cuando el path de las rutas se tiene definido como vacio solo en este elemento: routerLink="" -->
+  <li routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="list-group-item">
+    Buscar pais
+  </li>
+
+  <li routerLink="region" routerLinkActive="active" class="list-group-item">Por region</li>
+  <li routerLink="capital" routerLinkActive="active" class="list-group-item">Por capital</li>
+</ul>
